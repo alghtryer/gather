@@ -1,0 +1,80 @@
+[en]
+
+SHOW_SCORE_TAG = !gScore: !tTeam A: !g%d !tTeam B: !g%d
+MATCH_NOT_STARTED = !tA match hasn't started yet!
+SHOW_SCORE_HUD = Score:^n________^nTeam A: %d^nTeam B: %d
+NOT_ADMIN = You are not an admin!
+MATCH = Match start in:
+FIVE = !t= !g5 !t=
+FOUR = !t= !g4!t =
+THREE = !t= !g3 !t=
+TWO = !t= !g2 !t=
+ONE = !t= !g1 !t=
+GAME = ESL 5on5 Ladder-SETTINGS loaded
+LIVE = !gLIVE ! !tLIVE ! !gLIVE !
+GLHF = !tGood Luck !gand !gHave Fun!
+LIVEHUD = Game is LIVE^n1st HALF Started.
+HALF = !gHalf start in:
+LIVEHUDHALF = Game is LIVE^n2st HALF Started.
+CHECK = Check player: %d/%d
+READY_NUM = %d/%d are Ready...
+SWITCH_TEAMS = !t15 Rounds have passed, switching teams!
+DEMO_RECORD = !tDemo name : %s_-_%s
+WON_MAP = %s Won the vote with %d Votes
+MAP_X_VOTE = %s has Voted for %s
+MAP_STARTED = Map's vote has started!
+AUTO_READY = --------------------------^nWelcome %s^n^nGather System^nPlayer Menu on M^n^nAuto Ready for: %d^n--------------------------
+MATCH_OVER_HUD = Match is over!^nThank for playing.
+MATCH_OVER = !tMatch is over! !gThank for playing.
+MATCH_OVER_CHECK = Match is over in 5 seconds!!!
+PLUGIN_RESTART = Plugin will restart in 10 seconds.
+START_CAPTAINS = Random Captains will be chosen in 10 seconds.
+LESS_PLAYERS_CUSTOM = There are less than 2 players, can not pick 2 captains. Randomizing teams...
+RANDOM_CAPTAINS_CHOSEN = Random captains were chosen, The captains will now choose their teammates.
+TERROR_CAPTAIN_FIRST = Terrorists's Captain, please choose first.
+CAPTAINS_AFK = One of the captains is AFK! Randomizing teams...
+CAPTAINS_DISCONNECTED = One of the captains has disconnected! Randomizing Teams...
+CAPTAINS_DISCONNECTED_HUD = One of the Captains has LOGGED OUT!^nRandomizing Teams in 5 seconds...
+TEAMS_ARE_SET = All teams are set! Match will start in 10 seconds...
+TEAMS_ARE_SET_HUD = All teams are set!
+CHOOSE_PLAYER = Choose a Player to move to your team:
+TERROR_TEAM_FULL = Terrorists Team is FULL! Going back to CT Captain.
+CT_TEAM_FULL = Counter-Terrorists Team is FULL! Going back to T Captain.
+CHOSEN_IN_TEAM_TERROR = %s was chosen to be in Terrorists Team by %s the Captain.
+CHOSEN_IN_TEAM_CT = %s was chosen to be in Counter-Terrorists Team by %s the Captain.
+TEAMS_RANDOMIZED = Teams has been randomized! Starting match in 5 seconds...
+TEAM_INFO_CAPTAINS = Captain: %s^n^nTeammates:
+TEAM_A = Team A
+TEAM_B = Team B
+INFOHUD = %s^nWait for players...^n^nReady: %d/%d
+USE_INFO = Use say: .info NamePlayer CvarToCheck; example .info hartmann rate
+INFO_CHECK = Checking %s for %s.
+INFO_BOT = Can't on Bot.
+FFON_ADMIN = Admin enable Friendly Fire!
+FFOFF_ADMIN = Admin disable Friendly Fire!
+GOING_LIVE = Going Live everbody is ready!
+AFK_MOVE = You have %d  seconds to move or you will be kicked for being AFK
+AFK_KICK = %s was kicked for  being AFK longer than %i seconds
+MIRRORDAMAGE = Don't shoot on your teammate!!!
+ADMIN_KICK_1 = ADMIN: kick %s
+
+ADMIN_KICK_2 = ADMIN %s: kick %s
+VOTE_DISABLE = Vote disable, admin on server.
+ADMIN_COMMANDS_1 = Admin commands. All command work only on say!!!
+ADMIN_COMMANDS_2 = .kick player reason - kick player
+ADMIN_COMMANDS_3 = .map mapname - change map
+ADMIN_COMMANDS_4 = .ready map/cpt - Match start. Map: vote map Cpt captain vote
+ADMIN_COMMANDS_5 = .stop - End match.
+UNAVAILABLE_PLAYER = This command is unavailable! Need at least 3 players.
+CANNOT_YOURSELF = You cannot voteban yourself!
+ALREADY_VOTE = You already votebanned this player!
+VOTEBAN = Player %s votebanned %s!
+BAN_VOTEBAN = Player %s has been banned for %d min. due voteban!
+RTV = RTV: %d/%d
+RTV_RESTART = Server well be restart in 10 seconds!!!
+CHOOSE_MENU_NAME = \y[GATHER] \rMenu:
+CHOOSE_MENU_ITEM_1 = \wRules&Info 
+CHOOSE_MENU_ITEM_2 = \wPrivate Message
+CHOOSE_MENU_ITEM_3 = \wRTV (Vote For Restart Match)
+CHOOSE_MENU_ITEM_4 = \wVoteBan Player
+CHOOSE_MENU_ITEM_5 = \rAdmin Commands

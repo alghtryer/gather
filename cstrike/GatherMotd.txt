@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Info&Rules</title>
+
+</head>
+
+<body>
+<p><strong><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;">GATHER SYSTEM <em>Info&amp;Rules</em></span></strong></p>
+<p><span style="font-size: 12px;"><span style="font-family: Verdana,Geneva,sans-serif;"><strong>Commands<em>(on say)</em>:</strong></span></span>
+</p>
+<p><span style="font-size: 12px;"><span style="font-family: Verdana,Geneva,sans-serif;"><em>.skill - Show your skill points</em></span></span>
+</p>
+<p><em><span style="font-size: 12px;"><span style="font-family: Verdana,Geneva,sans-serif;">.rankskill - Show your current rank</span></span></em></p>
+<p><em><span style="font-size: 12px;"><span style="font-family: Verdana,Geneva,sans-serif;">.topskill - Show the Top15 players with the highest SkillPoints<br></span></span></em></p>
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;"><em>.info nick cvar - Show information about player cvar. Ex. .info hartmann rate</em></span></p>
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;"><em>.score - Show score</em></span></p>
+<p><strong>OTHER ON PLAYER MENU M(JOINTEAM BUTTON)</strong></p>
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;"><strong>Rules:</strong></span></p>
+<p><span style="font-family: Verdana, Geneva, sans-serif; font-size: 12px;"><em>write you rules...</em></span></p>
+<p><br></p>
+</body>
+</html>

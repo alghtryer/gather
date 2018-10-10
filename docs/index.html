@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Gather System v1.0</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+      <style>
+         html,
+         body {
+         height: 100%;
+		 font-family: Verdana, sans-serif;
+         }
+         body {
+         background-color: #f4f4f4;
+         color: #000; 
+         }
+         #maindiv {
+         margin: 50px auto; 
+         }
+         .tab { 
+         display:inline-block; 
+         margin-left: 40px; 
+         }
+		 h5{font-family: Verdana, sans-serif; font-size: 16px; line-height: 19px; font-weight: 700;}
+		 p{font-family: 'Verdana', sans-serif; font-size: 13px;line-height: 16px; font-weight: 400;}
+		 p.small{font-size: 9px;}
+         hr {
+         border-color: #000;
+         border-left: 0px;
+         border-right: 0px;
+         border-style: solid;
+         -webkit-margin-before: 0.8em;
+         -webkit-margin-after: 0.8em;
+         }
+		 img {width: 100%; heigt: 100%;}
+		 fieldset{
+		 border:2px solid #000;
+		 padding-left: 20px;
+		}
+		legend {
+		background-color: #000;
+		color: #fff;
+		margin-left:16px;
+		padding: 5px;
+		}
+		.red{color:red;}
+      </style>
+   </head>
+   <body>
+      <div id="maindiv" class="container">
+	<p class="small">15. Sep 2018.</p>
+	  <h5>PLUGIN INFO</h5>
+	  <hr>
+			<p>
+			PLUGIN NAME&nbsp;&nbsp;&nbsp;&nbsp;:<em> GATHER SYSTEM PUG Mod</em><br>
+			VERSION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<em> v1.0-Test</em><br>
+			AUTHOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<em> Alghtryer</em><br>
+			E-MAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<em> alghtryer@gmail.com</em><br>
+			WEB PAGE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<em><a style="text-decoration: none;" href="https://alghtryer.github.io/"> https://alghtryer.github.io/</a></em>
+			</p>
+			<hr>
+			<br>
+			<p><strong>DESCRIPTIONS:</strong></p>
+         <p><em>This is an automatic system. Allows playing mix match without admin.</em></p>
+         <p><strong>Features:</strong></p>
+         <p class="tab">
+            <em>
+               - Player after connect ready after 10 second.<br>
+               - Map vote when 10(cvar) players ready.<br>
+               - After the map changes, the captain votes begins.<br>
+               - The captains choose their teams and the match begins.<br>
+               - Team tag a. = CT; b. = TT, and skillpoints on name 
+               &lt;skill&gt;
+               . Name look TeamTag.PlayerName
+               &lt;skillpoints&gt;
+               example: a.name&lt;123&gt; or b.name&lt;123&gt;<br>
+               - exec esl.cfg<br>
+               - Demo record for every player. Demo start when the match start. Demo name is mapname_-_steamidofplayer.dem example: de_dust2_-_STEAM_ID.dem<br>
+               - Hostname score. Score update on server name.<br>
+               - Score show on hud in freeze time.<br>
+               - Afk kicker.<br>
+               - Mirror friendly fire damage. When you shoot to your teammate the damage hits on you and not in your teammate.<br>
+               - Match end if three player leave match. (checking three times after end).<br>
+               - Spec don't allowed, kick every on spec(chect time 20 seconds).<br>
+               - Player without team bee kick.<br>
+               - Maps read from maps.ini<br>
+               - Match end when one team get score 16, or 15 - 15 score.<br>
+            </em>
+         </p>
+         <p><strong>Commands:</strong></p>
+         <p class="tab" ><em>
+			.score - Show score<br>
+            .kick player reason - kick player<br>
+            .info player cvar - info player cvar value<br>
+            .map mapname - changemap<br>
+            .ready map/cpt - Match start. Map: vote map Cpt captain vote<br>
+            .ff on/off - Enable/disable friednly fire.<br>
+            .stop - End match.<br>
+            </em>
+         </p>
+         <p><strong>Cvars:</strong></p>
+         <p class="tab">
+		 All cvars in <em class="red">amxmodx/configs/gathersystem.cfg</em><br><br>
+		 <em>
+		 	gs_prefix "!gGather :" // Prefix in chat message<br>
+			gs_nick "1" // On-Off team tag and skillpoints<br>
+			gs_tag "1" // On-Off Team Tag<br>
+			gs_skill "1" // On-Off skill points on name<br>
+			gs_amount "10" // Need player for start<br>
+			gs_afktime "90" // Afk Time<br>
+			gs_tag_a "a." // Team A Tag<br>
+			gs_tag_a "b." // Team B Tag<br>
+			gs_style "3" // Style Chat Prefix
+			</em>
+         </p>
+         <p><strong>Credits:</strong></p>
+         <p class="tab">
+		 <em>
+			fysiks 	- Team Tag<br>
+			Diegorkable - Random Captains and Randomizing Teams<br>
+			ConnorMcLeod - Mirror Damage, Say Kick<br>
+			Cheesy Peteza - Afk Kicker<br>
+			xPaw - Hostname Timeleft<br>
+			Map Vote - AMXX Team<br>
+			Exolent - Save Team Score<br>
+	 		Alka - Voteban <br>
+         	EaGle/Flicker(rewriten) - Private Message<br>
+			guipatinador - SkillPoints
+			</em>
+         </p>
+         <p>
+            <strong><a style="text-decoration: none;" href="http://bit.ly/gatherimg">Image of mod.</a></strong>
+         </p>
+         <p class="red">
+            <strong>
+            If you find a bug / error, report to me.<br>
+            This is only TEST version.<br>
+			If you have problem with chat you must download <a style="text-decoration: none;" href="http://bit.ly/dlChatFix">this.</a>
+            </strong>
+         </p>
+		 <fieldset>
+		 <legend>Files:</legend>
+		<p><br><a class="button" href="http://bit.ly/gathergit">View</a> Sourcecode on github <strong>or</strong> <a class="button button-primary" href="http://bit.ly/gatherzip">Download</a> gather-master.zip</p>
+		</fieldset>	
+      </div>
+   </body>
+</html>
