@@ -1,6 +1,6 @@
 /*
 *
-*	Thats plugin made for GATHER SYSTEM <https://alghtryer.github.io/Gather/> by Alghtryer <alghtryer.github.io> 
+*	Thats plugin made for GATHER SYSTEM <https://alghtryer.github.io/gather/> by Alghtryer <alghtryer.github.io> 
 *
 */
 
