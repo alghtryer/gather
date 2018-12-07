@@ -80,7 +80,7 @@
 *
 *		Credits:
 *		- - - - -
-*			fysiks 	- Team Tag
+*			fysiks 	- Skill on Name
 *			Diegorkable - Random Captains and Randomizing Teams
 *			ConnorMcLeod - Mirror Damage, Say Kick
 *			Cheesy Peteza - Afk Kicker
@@ -254,7 +254,7 @@ public plugin_init(){
 	
 	get_pcvar_string( CvarPrefix, Prefix, charsmax( Prefix ) );
 	get_pcvar_string( CvarTagA, TAG_A, charsmax( TAG_A ) );
-	get_pcvar_string( CvarTagB, TAG_B, charsmax( TAG_A ) );
+	get_pcvar_string( CvarTagB, TAG_B, charsmax( TAG_B ) );
 	
 	
 	register_event("TeamScore", "Event_TeamScore", "a");
@@ -687,7 +687,9 @@ stock ChangeTagA(id){
 	if(get_pcvar_num(CvarNick)) 
 	{
 		get_user_info( id, "name", szName, charsmax( szName ) );
-		replace_all(szName, 31, " " , "");
+		replace_all(szName, charsmax(szName), " " , "");
+		replace(szName, charsmax(szName), TAG_A , "");
+		replace(szName, charsmax(szName), TAG_B , "");
 		
 		if(get_pcvar_num(CvarSkill)) 
 		{
@@ -696,19 +698,10 @@ stock ChangeTagA(id){
 		
 		if(get_pcvar_num(CvarTag)) 
 		{
-			if(equal(szName, TAG_A, charsmax(TAG_A)))  
-			{  
-				set_user_info( id, "name", szName );  
-				vsChangeName[id] = true;
-				vsName[id] = szName; 
-			}  
-			else if( !replace(szName, charsmax(szName), TAG_B, TAG_A) )  
-			{  
-				format(szName, charsmax(szName), "%s%s", TAG_A, szName);
-				set_user_info( id, "name", szName );
-				vsChangeName[id] = true;
-				vsName[id] = szName;
-			}  
+			format(szName, charsmax(szName), "%s%s", TAG_A, szName);
+			set_user_info( id, "name", szName );
+			vsChangeName[id] = true;
+			vsName[id] = szName;
 		}
 		else
 		{  
@@ -722,27 +715,21 @@ stock ChangeTagB(id){
 	if(get_pcvar_num(CvarNick)) 
 	{
 		get_user_info( id, "name", szName, charsmax( szName ) );
-		replace_all(szName, 31, " " , "");
+		replace_all(szName, charsmax(szName), " " , "");
+		replace(szName, charsmax(szName), TAG_A , "");
+		replace(szName, charsmax(szName), TAG_B , "");
 		
 		if(get_pcvar_num(CvarSkill)) 
 		{
 			szName = points_in_name(id, szName);
 		}
+
 		if(get_pcvar_num(CvarTag)) 
 		{
-			if(equal(szName, TAG_B, charsmax(TAG_B)))  
-			{  
-				set_user_info( id, "name", szName );  
-				vsChangeName[id] = true;
-				vsName[id] = szName;
-			}  
-			else if( !replace(szName, charsmax(szName), TAG_A, TAG_B) )  
-			{  
-				format(szName, charsmax(szName), "%s%s", TAG_B, szName);
-				set_user_info( id, "name", szName ); 
-				vsChangeName[id] = true;
-				vsName[id] = szName;
-			}  
+			format(szName, charsmax(szName), "%s%s", TAG_B, szName);
+			set_user_info( id, "name", szName ); 
+			vsChangeName[id] = true;
+			vsName[id] = szName;
 		} 
 		else
 		{  
