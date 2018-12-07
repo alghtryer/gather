@@ -687,7 +687,6 @@ stock ChangeTagA(id){
 	if(get_pcvar_num(CvarNick)) 
 	{
 		get_user_info( id, "name", szName, charsmax( szName ) );
-		replace_all(szName, charsmax(szName), " " , "");
 		replace(szName, charsmax(szName), TAG_A , "");
 		replace(szName, charsmax(szName), TAG_B , "");
 		
@@ -715,7 +714,6 @@ stock ChangeTagB(id){
 	if(get_pcvar_num(CvarNick)) 
 	{
 		get_user_info( id, "name", szName, charsmax( szName ) );
-		replace_all(szName, charsmax(szName), " " , "");
 		replace(szName, charsmax(szName), TAG_A , "");
 		replace(szName, charsmax(szName), TAG_B , "");
 		
@@ -741,6 +739,7 @@ stock ChangeTagB(id){
 	}
 } 
 stock points_in_name(id, szName[32] ) { 
+	replace_all(szName, charsmax(szName), " " , "");
 	new iLen = strlen( szName );
 	
 	new iPos = iLen - 1;
