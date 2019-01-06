@@ -1727,11 +1727,11 @@ check_afktime(id) {
 	
 	if ( maxafktime-WARNING_TIME <= g_afktime[id] <  maxafktime) {
 		new timeleft = maxafktime - g_afktime[id];
-		ClientPrintColor(0, "%s %L", Prefix, LANG_PLAYER, "AFK_MOVE", timeleft);
+		ClientPrintColor(id, "%s %L", Prefix, LANG_PLAYER, "AFK_MOVE", timeleft);
 		} else if (g_afktime[id] > maxafktime) {
 		new name[32];
 		get_user_name(id, name, 31);
-		ClientPrintColor(id, "%s %L", Prefix, LANG_PLAYER, "AFK_KICK",name, maxafktime );
+		ClientPrintColor(0, "%s %L", Prefix, LANG_PLAYER, "AFK_KICK",name, maxafktime );
 		log_amx("%s was kicked for being AFK longer than %i  seconds", name, maxafktime);
 		server_cmd("kick #%d ^"You were kicked for being AFK longer  than %i seconds^"", get_user_userid(id), maxafktime);
 	}
