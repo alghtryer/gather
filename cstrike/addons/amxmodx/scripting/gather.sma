@@ -1691,7 +1691,7 @@ public OnCBasePlayer_TraceAttack(id, iAttacker, Float:flDamage, Float:fVecDir[3]
 			SetHamParamEntity(1, iAttacker); 
 			SetHamParamFloat(3, flDamage * flMirorDamage); 
 			// SetHamParamVector(4, Float:{0.0,0.0,0.0}) // try this one if you get strange blood directions 
-			ClientPrintColor(0, "%s %L", Prefix, LANG_PLAYER, "MIRRORDAMAGE");
+			ClientPrintColor(id, "%s %L", Prefix, LANG_PLAYER, "MIRRORDAMAGE");
 			return HAM_HANDLED;
 		} 
 	} 
@@ -1731,7 +1731,7 @@ check_afktime(id) {
 		} else if (g_afktime[id] > maxafktime) {
 		new name[32];
 		get_user_name(id, name, 31);
-		ClientPrintColor(0, "%s %L", Prefix, LANG_PLAYER, "AFK_KICK",name, maxafktime );
+		ClientPrintColor(id, "%s %L", Prefix, LANG_PLAYER, "AFK_KICK",name, maxafktime );
 		log_amx("%s was kicked for being AFK longer than %i  seconds", name, maxafktime);
 		server_cmd("kick #%d ^"You were kicked for being AFK longer  than %i seconds^"", get_user_userid(id), maxafktime);
 	}
