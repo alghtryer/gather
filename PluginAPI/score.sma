@@ -1,5 +1,6 @@
 /*
-*
+*	Info: Save players kills/deats on match half.
+*	
 *	Thats version edited by Alghtryer <alghtryer.github.io> for GATHER SYSTEM <alghtryer.github.io/gather>
 *
 *	Original version: https://forums.alliedmods.net/showpost.php?p=2612753&postcount=4
