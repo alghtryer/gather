@@ -1691,7 +1691,7 @@ public OnCBasePlayer_TraceAttack(id, iAttacker, Float:flDamage, Float:fVecDir[3]
 			SetHamParamEntity(1, iAttacker); 
 			SetHamParamFloat(3, flDamage * flMirorDamage); 
 			// SetHamParamVector(4, Float:{0.0,0.0,0.0}) // try this one if you get strange blood directions 
-			ClientPrintColor(id, "%s %L", Prefix, LANG_PLAYER, "MIRRORDAMAGE");
+			ClientPrintColor(iAttacker, "%s %L", Prefix, LANG_PLAYER, "MIRRORDAMAGE");
 			return HAM_HANDLED;
 		} 
 	} 
