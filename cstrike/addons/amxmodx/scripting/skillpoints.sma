@@ -1125,8 +1125,8 @@ public handleSayText(msgId, msgDest, msgEnt){
 	new id = get_msg_arg_int(1);
 	
 	if(is_user_connected(id)){
-		new szTmp[256],
-			szTmp2[256];
+		new szTmp[190],
+			szTmp2[190];
 			
 		get_msg_arg_string(2, szTmp, charsmax(szTmp));
 		
